@@ -1,0 +1,112 @@
+.chatBox {
+    width: 55vw;
+    max-width: 55vw;
+
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    overflow: visible;
+
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+    z-index: 100;
+}
+
+.chatForm {
+    display: flex;
+}
+
+.chatForm input {
+    width: 90%;
+
+    outline: none;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    border-bottom-left-radius: 20px;
+    border-color: transparent;
+    background-color: var(--primary-color);
+
+    color: var(--secondary-color);
+}
+
+.chatForm input::placeholder {
+    color: var(--secondary-color);
+}
+
+.chatForm button {
+    flex-grow: 1;
+    background-color: var(--secondary-color);
+    color: white;
+    border-bottom-right-radius: 20px;
+    border-color: transparent;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    cursor: pointer;
+}
+
+.chatForm button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.chatForm button:active {
+    background-color: #FCEFD9;
+}
+
+.chat_log {
+    min-height: 47vh;
+    width: 100%;
+
+    background-color: var(--secondary-color);
+    border-color: transparent;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    
+    overflow: auto;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.chat_response {
+    border-style: groove;
+    border-color: transparent;
+    border-top-color: rgba(0, 0, 0, 0.2);
+    color: var(--bg-color);
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.8;
+    font-size: 20px;
+}
+
+.chat_response h2 {
+    font-size: 28px;
+}
+
+@media screen and (max-width: 1024px) {
+    .chatBox {
+        width: 73vw;
+        max-width: 73vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .chatBox {
+        width: 85vw;
+        max-width: 85vw;
+    }
+}

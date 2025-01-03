@@ -1,0 +1,33 @@
+.hero_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+}
+
+.heading {
+    margin-top: 30px;
+
+    font-size: 96px;
+    text-align: center;
+    line-height: 0.8;
+    letter-spacing: 4;
+
+    text-shadow: var(--text-shadow);
+    color: var(--secondary-color);
+
+    z-index: 10;
+}
+
+#heading_unique {
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 450px) {
+    .heading {
+        font-size: 48px;
+    }
+    
+}

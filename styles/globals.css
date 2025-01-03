@@ -1,0 +1,43 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+
+:root {
+    --primary-color: #FFBF00;
+    --secondary-color: #26253B;
+    --bg-color: #F4F3FA;
+    --text-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+nav, footer, main {
+  background-color: var(--bg-color);
+}
+
+main {
+  min-height: 84vh; 
+}

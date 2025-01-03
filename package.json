@@ -1,0 +1,33 @@
+{
+  "name": "acadpapa-app",
+  "version": "1.0.0",
+  "author": "Jose Leon",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbo",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.1",
+    "@google-cloud/vertexai": "^1.1.0",
+    "@upstash/redis": "^1.31.1",
+    "framer-motion": "^11.2.4",
+    "js-cookie": "^3.0.5",
+    "next": "14.2.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-remark": "^2.1.0",
+    "rehype-mathjax": "^6.0.0",
+    "rehype-sanitize": "^6.0.0",
+    "remark-math": "^6.0.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3"
+  }
+}
